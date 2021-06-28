@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Voice conversion Systems Evaluation</h1>
+
+<p>This evaluation is part of my Bachelor Thesis "Comparison of state of the art voice conversion systems". We compare 3 different voice conversion styems here, 
+    One-shot Voice Conversion by Separating Speaker and Content Representations with Instance Normalization (ADAIN)
+    <a href="https://github.com/jjery2243542/adaptive_voice_conversion">[1]</a> <a href="https://arxiv.org/abs/1904.05742">[2]</a>,  
+    AGAIN-VC: A One-shot Voice Conversion using Activation Guidance and Adaptive Instance Normalization 
+    <a href="https://github.com/KimythAnly/AGAIN-VC">[3]</a> <a href="https://arxiv.org/abs/2011.00316">[4]</a>
+     and FragmentVC: Any-to-Any Voice Conversion by End-to-End Extracting and Fusing Fine-Grained Voice Fragments With Attention 
+    <a href="https://github.com/yistLin/FragmentVC">[5]</a> <a href="https://arxiv.org/abs/2010.14150">[6]</a> </p>
+
+<table>
+    <tr><th></th>
+        <th>Source</th>
+        <th>Target</th>
+        <th>Ground truth</th>
+        <th>ADAIN</th>
+        <th>AGAIN</th>
+        <th>Fragment-VC</th>
+    </tr>
+    <!-- Same Sex -->
+    
+    <tr>
+        <td><h4>228_04 -> 233_06</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p228%20004%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p233%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p233%20004%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2022804%2023306.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p228%20004%20mic1.flac%20to%20p233%20006%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2022804%2023306.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        
+    </tr>
+    <tr>
+        <td><h4>233_06 -> 228_11</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p233%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p228%20011%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p228%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2023306%2022811.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p233%20006%20mic1.flac%20to%20p228%20011%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2023306%20228.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+    <tr>
+        <td><h4>247_04 -> 311_06</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p247%20004%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p311%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p311%20004%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2024704%2031106.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p247%20004%20mic1.flac%20to%20p311%20006%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2024704%20311.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+    <tr>
+        <td><h4>311_06 -> 247_11</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p311%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p247%20011%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p247%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2031106%2024711.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p311%20006%20mic1.flac%20to%20p247%20011%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2031106%20247.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+    <!-- Across Sex -->
+    <tr>
+        <td><h4>228_24 -> 247_04</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p228%20024%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p247%20004%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p247%20024%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2022824%2024704.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p228%20024%20mic1.flac%20to%20p247%20004%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2022824%20247.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+    <tr>
+        <td><h4>233_11 -> 311_24</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p233%20011%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p311%20024%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p311%20011%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2023311%2031124.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p233%20011%20mic1.flac%20to%20p311%20024%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2023311%20311.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+    <tr>
+        <td><h4>247_24 -> 233_04</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p247%20024%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p233%20004%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p233%20024%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2024724%2023304.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p247%20024%20mic1.flac%20to%20p233%20004%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2024724%20233.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+    <tr>
+        <td><h4>311_11 -> 228_06</h4></td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p311%20011%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p228%20006%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/SourceFiles/VCTK/00%20-%20VCTK%20-%20p228%20011%20mic1.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/ADAIN/00%20-%20ADAIN%20-%2031111%2022806.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/AGAIN/00%20-%20wav%20-%20p311%20011%20mic1.flac%20to%20p228%20006%20mic1.flac.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+        <td><audio controls>
+            <source src="https://github.com/m1n1/vc-eval/raw/main/AudioFiles/VCTK/FragmentVC/00%20-%20FragmentVC%20-%2031111%20228.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
