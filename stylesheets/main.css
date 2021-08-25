@@ -2,7 +2,6 @@
     background-color: lightgray;
     padding-bottom: 7ex;
     padding-top: 7ex;
-    margin-bottom: 5ex;
 }
 
 .header-text {
@@ -16,3 +15,7 @@
 /* body {
     background-color: darkgray;
 } */
+
+h2 {
+    margin-top: 3ex !important;
+}
