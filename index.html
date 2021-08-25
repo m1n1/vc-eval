@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <link type="text/css" rel="stylesheet" href="stylesheets/main.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <body>
-    <div class="jumbotron jumptron-fluid">
+    <div class="jumbotron jumptron-fluid" id="header">
         <div class="container">
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <h1>Any-to-Any Voice Conversion Systems Evaluation</h1>
 
-
-        <h1>Voice conversion Systems Evaluation</h1>
-
-        <p>This evaluation is part of my Bachelor Thesis "Comparison of state of the art voice conversion systems". We
-            compare 3 different voice conversion styems here,
+        <p class="header-text">This evaluation is part of my Bachelor Thesis "State-of-the-art any-to-any Voice Conversion". There are 3 different voice conversion systems compared here,
             One-shot Voice Conversion by Separating Speaker and Content Representations with Instance Normalization
             (ADAIN)
             <a href="https://github.com/jjery2243542/adaptive_voice_conversion">[1]</a> <a
@@ -23,9 +20,13 @@
             With Attention
             <a href="https://github.com/yistLin/FragmentVC">[5]</a> <a href="https://arxiv.org/abs/2010.14150">[6]</a>
         </p>
+        <p class="header-text">  All seen speakers are part of CSTR's VCTK Corpus <a href="https://datashare.ed.ac.uk/handle/10283/2950">[7]</a>. 
+            The utterances for unseen speakers were manually extracted from the Joe Rogan Podcast <a href="https://www.youtube.com/user/PowerfulJRE">[8]</a>
+        </p> 
+        
     </div>
     </div>
-    <div class="container-xl">
+    <div class="container-xxl">
         <h2>Seen to Seen Speaker Conversion</h2>
         <div class="card mb-3">
             <div class="table-responsive">

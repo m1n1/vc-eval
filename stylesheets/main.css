@@ -1,0 +1,18 @@
+#header {
+    background-color: lightgray;
+    padding-bottom: 7ex;
+    padding-top: 7ex;
+    margin-bottom: 5ex;
+}
+
+.header-text {
+    font-size: large;
+}
+
+.card {
+    border-width: 2px !important;
+}
+
+/* body {
+    background-color: darkgray;
+} */
